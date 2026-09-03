@@ -1,0 +1,8 @@
+jp.ac.meijou.android.cyc.app-pngs-0 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\build\generated\res\pngs\debug
+jp.ac.meijou.android.cyc.app-updated_navigation_xml-1 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\build\generated\updated_navigation_xml\debug
+jp.ac.meijou.android.cyc.app-packageDebugResources-2 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+jp.ac.meijou.android.cyc.app-packageDebugResources-3 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+jp.ac.meijou.android.cyc.app-debug-4 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\build\intermediates\merged_res\debug\mergeDebugResources
+jp.ac.meijou.android.cyc.app-debug-5 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\src\debug\res
+jp.ac.meijou.android.cyc.app-main-6 C:\Users\sagana2525\AndroidStudioProjects\choose-your-clothes\app\src\main\res
+gradleHome-0 C:\Users\sagana2525\.gradle
