@@ -1,6 +1,14 @@
 [
     {
-        "merged": "jp.ac.meijou.android.cyc.app-mergeDebugResources-39:/layout/activity_main.xml",
-        "source": "jp.ac.meijou.android.cyc.app-main-42:/layout/activity_main.xml"
+        "merged": "jp.ac.meijou.android.cyc.app-mergeDebugResources-39:/layout/activity_photo_list.xml",
+        "source": "jp.ac.meijou.android.cyc.app-main-42:/layout/activity_photo_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sagana2525\\.gradle\\daemon\\9.5.0\\jp.ac.meijou.android.cyc.app-mergeDebugResources-39:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\sagana2525\\.gradle\\daemon\\9.5.0\\jp.ac.meijou.android.cyc.app-main-42:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\sagana2525\\.gradle\\daemon\\9.5.0\\jp.ac.meijou.android.cyc.app-mergeDebugResources-39:\\layout\\activity_photo_list.xml",
+        "source": "C:\\Users\\sagana2525\\.gradle\\daemon\\9.5.0\\jp.ac.meijou.android.cyc.app-main-42:\\layout\\activity_photo_list.xml"
     }
 ]

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoListActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_photoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_photoList_ver"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_tops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="・Tops"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/add_tops"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="55dp"
+                        app:srcCompat="@drawable/outline_add_photo_alternate" />
+
+                    <ImageView
+                        android:id="@+id/photoFlame_tops"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        app:srcCompat="@drawable/outline_crop_free" />
+
+
+                    <!-- click処理はgroupを指定する -->
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/group_tops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="add_tops, photoFlame_tops" />
+
+                </FrameLayout>
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_tops_1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_tops_2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_tops_3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_tops_4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_tops_5"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_tops_6"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_tops_7"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_tops_8"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
