@@ -6,8 +6,10 @@ int drawable outline_add_photo_alternate 0x0
 int drawable outline_crop_free 0x0
 int drawable outline_crop_square 0x0
 int id add_bottoms 0x0
+int id add_outer 0x0
 int id add_tops 0x0
 int id group_bottoms 0x0
+int id group_outer 0x0
 int id group_tops 0x0
 int id linearLayout_photoList_hor1 0x0
 int id linearLayout_photoList_hor2 0x0
@@ -15,9 +17,13 @@ int id linearLayout_photoList_hor3 0x0
 int id linearLayout_photoList_hor4 0x0
 int id linearLayout_photoList_hor5 0x0
 int id linearLayout_photoList_hor6 0x0
+int id linearLayout_photoList_hor7 0x0
+int id linearLayout_photoList_hor8 0x0
+int id linearLayout_photoList_hor9 0x0
 int id linearLayout_photoList_ver 0x0
 int id main 0x0
 int id photoFlame_bottoms 0x0
+int id photoFlame_outer 0x0
 int id photoFlame_tops 0x0
 int id photo_bottoms_1 0x0
 int id photo_bottoms_2 0x0
@@ -27,6 +33,14 @@ int id photo_bottoms_5 0x0
 int id photo_bottoms_6 0x0
 int id photo_bottoms_7 0x0
 int id photo_bottoms_8 0x0
+int id photo_outer_1 0x0
+int id photo_outer_2 0x0
+int id photo_outer_3 0x0
+int id photo_outer_4 0x0
+int id photo_outer_5 0x0
+int id photo_outer_6 0x0
+int id photo_outer_7 0x0
+int id photo_outer_8 0x0
 int id photo_tops_1 0x0
 int id photo_tops_2 0x0
 int id photo_tops_3 0x0
@@ -37,6 +51,7 @@ int id photo_tops_7 0x0
 int id photo_tops_8 0x0
 int id scrollView_photoList 0x0
 int id text_bottoms 0x0
+int id text_outer 0x0
 int id text_tops 0x0
 int layout activity_main 0x0
 int layout activity_photo_list 0x0

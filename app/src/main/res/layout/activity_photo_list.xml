@@ -38,8 +38,9 @@
                 android:orientation="horizontal">
 
                 <FrameLayout
+                    android:id="@+id/group_tops"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/add_tops"
@@ -59,11 +60,11 @@
 
 
                     <!-- click処理はgroupを指定する -->
-                    <androidx.constraintlayout.widget.Group
+                    <!--androidx.constraintlayout.widget.Group
                         android:id="@+id/group_tops"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:constraint_referenced_ids="add_tops, photoFlame_tops" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:constraint_referenced_ids="add_tops, photoFlame_tops" /-->
 
                 </FrameLayout>
 
@@ -161,6 +162,7 @@
                 android:orientation="horizontal">
 
                 <FrameLayout
+                    android:id="@+id/group_bottoms"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
@@ -182,11 +184,11 @@
 
 
                     <!-- click処理はgroupを指定する -->
-                    <androidx.constraintlayout.widget.Group
+                    <!--androidx.constraintlayout.widget.Group
                         android:id="@+id/group_bottoms"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:constraint_referenced_ids="add_tops, photoFlame_tops" />
+                        app:constraint_referenced_ids="add_tops, photoFlame_tops" /-->
 
                 </FrameLayout>
 
@@ -268,8 +270,129 @@
             <!-- Bottomsここまで -->
 
             <!-- Outerここから -->
+            <TextView
+                android:id="@+id/text_outer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="・Outer"
+                android:textSize="28dp" />
 
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/group_outer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/add_outer"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="55dp"
+                        app:srcCompat="@drawable/outline_add_photo_alternate" />
+
+                    <ImageView
+                        android:id="@+id/photoFlame_outer"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        app:srcCompat="@drawable/outline_crop_free" />
+
+
+                    <!-- click処理はgroupを指定する -->
+                    <!--androidx.constraintlayout.widget.Group
+                        android:id="@+id/group_outer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:constraint_referenced_ids="add_tops, photoFlame_tops" /-->
+
+                </FrameLayout>
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_outer_1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_outer_2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_outer_3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_outer_4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_outer_5"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_photoList_hor9"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <!-- id/photo_example_n は写真が追加されていない間invisibleまたはgoneにする．
+                    よって，srcCompatで写真を指定できるとよい． -->
+                <ImageView
+                    android:id="@+id/photo_outer_6"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_outer_7"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+                <ImageView
+                    android:id="@+id/photo_outer_8"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/outline_crop_square" />
+
+            </LinearLayout>
             <!-- Outerここまで -->
+
         </LinearLayout>
 
     </ScrollView>
