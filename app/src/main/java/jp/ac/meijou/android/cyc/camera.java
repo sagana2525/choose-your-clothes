@@ -28,7 +28,7 @@ public class camera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         binding = ActivityPhotoListBinding.inflate(getLayoutInflater());
-        cameraProviderListenableFuture = ProcessCameraProvider.getInstance(this);
+//        cameraProviderListenableFuture = ProcessCameraProvider.getInstance(this);
         setContentView(binding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -41,13 +41,13 @@ public class camera extends AppCompatActivity {
 //                        .setTargetRotation(view.getDisplay().getRotation())
 //                        .build();
 
-        ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
-                new ActivityResultCallback<Uri>() {
-
-                    public  void onActivityResult(Uri uri){
-
-                    }
-                });
+//        ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
+//                new ActivityResultCallback<Uri>() {
+//
+//                    public  void onActivityResult(Uri uri){
+//
+//                    }
+//                });
 
     }
 }
