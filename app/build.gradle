@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation libs.camera.lifecycle
     coreLibraryDesugaring libs.desuger.jdk.libs
     implementation libs.activity.ktx
     implementation libs.appcompat
