@@ -34,13 +34,13 @@ public class Menu extends AppCompatActivity {
         });
 
         //画面遷移(picture)
-        binding.b1.setOnClickListener(view->{
+        binding.b2.setOnClickListener(view->{
             var intent = new Intent(this,PhotoListActivity.class);
             startActivity(intent);
         });
 
         //画面遷移(camera)
-        binding.b1.setOnClickListener(view->{
+        binding.b3.setOnClickListener(view->{
             var intent = new Intent(this,camera.class);
             startActivity(intent);
         });
