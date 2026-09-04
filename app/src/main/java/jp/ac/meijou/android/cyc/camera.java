@@ -36,10 +36,10 @@ public class camera extends AppCompatActivity {
             return insets;
         });
 
-        ImageCapture imageCapture =
-                new ImageCapture.Builder()
-                        .setTargetRotation(view.getDisplay().getRotation())
-                        .build();
+//        //ImageCapture imageCapture =
+//                new ImageCapture.Builder()
+//                        .setTargetRotation(view.getDisplay().getRotation())
+//                        .build();
 
         ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
                 new ActivityResultCallback<Uri>() {
