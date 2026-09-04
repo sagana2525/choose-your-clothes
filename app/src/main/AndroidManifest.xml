@@ -22,6 +22,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".camera"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PhotoListActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".MainActivityWeather"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" >
