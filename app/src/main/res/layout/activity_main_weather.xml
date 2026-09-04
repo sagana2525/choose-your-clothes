@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_weather">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="天気情報の取得"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="現在地"
+        android:textSize="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSelectLocation"
+        />
+
+    <Button
+        android:id="@+id/buttonSelectLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="場所の選択"
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="@+id/buttonCurrentLocation"
+        app:layout_constraintStart_toEndOf="@+id/buttonCurrentLocation"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerPrefectures"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        tools:text="都道府県"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCurrentLocation"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerCity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/spinnerPrefectures"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCurrentLocation"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:text="決定"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPrefectures"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textNameLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="〇〇県〇〇市"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ここに天気を表示"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textNameLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageWeather"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        tools:text="ここに天気の画像を表示"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="気温"
+        android:textSize="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textTemparature"/>
+
+    <TextView
+        android:id="@+id/textTemparature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="16℃"
+        android:textSize="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/text"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雨量"
+        android:textSize="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textRainfall"/>
+
+    <TextView
+        android:id="@+id/textRainfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="16mm"
+        android:textSize="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@+id/text2"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
