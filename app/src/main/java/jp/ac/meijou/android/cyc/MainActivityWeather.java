@@ -115,7 +115,6 @@ public class MainActivityWeather extends AppCompatActivity {
                 Optional.ofNullable(gist)
                         .map(g -> g.files.get("lv01Nm"))
                         .ifPresent(gistFile -> {
-                            // UIスレッド以外䛷更新する䛸クラッシュする䛾䛷、UIスレッド上䛷実行させる
                             runOnUiThread(() -> binding.textNameLocation.setText(gistFile.content));
                         });
             }
