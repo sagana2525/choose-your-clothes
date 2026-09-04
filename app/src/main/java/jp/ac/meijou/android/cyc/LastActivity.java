@@ -14,6 +14,7 @@ public class LastActivity extends AppCompatActivity {
 
     private ActivityLastBinding binding;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
