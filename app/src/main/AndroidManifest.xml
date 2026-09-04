@@ -23,11 +23,11 @@
         </activity>
         <activity
             android:name=".camera"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".PhotoListActivity"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
     </application>
 
